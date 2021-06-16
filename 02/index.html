@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>02 - {온}점</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="topic1iconn.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="grid">
+		<div class="a">
+			<div class="ccc cccard">
+				<div class="span">02 - GRAMMAR - {The Period/Full Stop}Point ; Mark The End of A Declarative Sentence&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">02 - GRAMMAR - {The Period/Full Stop}Point ; Mark The End of A Declarative Sentence&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">02 - GRAMMAR - {The Period/Full Stop}Point ; Mark The End of A Declarative Sentence&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</div>
+		</div>
+		<nav>
+		<div class="grid">
+			<a href="../main/index.html"></a>
+		</div>
+	</nav>
+		<div class="topic">{온}점</div>
+		<img src="topic2circle.png" class="topic1circle small1"></div>
+		<div class="def"><font class="frontdef">문장을 마칠 때 사용하는 문장 부호</font><br>
+				일반적으로 대부분 언어에서 마침표를 {온}점(.)으로 쓴다. 중국어, 일본어 등에서는 고리점(。)을 사용한다. 한국에서는 가로쓰기에는 {온}점(.)을 쓰고 세로쓰기에는 고리점(。)을 썼으나, 최근에는 가로쓰기가 대부분이라, 결국 2015년 1월 1일 한글 맞춤법 부록: 문장부호 규정에서  모점(、)과 함께 삭제되었다.</div>
+		<div class="b"></div>
+		<img src="topic2hott.png" class="topic1hott small3"></div>
+		<div class="no1">1. 2015년 1월 1월부터 {&nbsp&nbsp&nbsp}점 대신 ‘마침표’가 바른 명칭이 되었다.</div>
+		<div class="no2">2. 한국·중국·일본 중에서 한국만 공식적으로 서양식 {&nbsp&nbsp&nbsp}점을 사용하고 있다. 중국과 일본은 고리점(。)을 사용한다.</div>
+		<div class="no3">3. {&nbsp&nbsp&nbsp}점을 축약의 의미로 사용할 땐, 모든 축약 글자 뒤에 마침표를 찍거나 하나도 찍지 않아야 한다. 같이 연습해보자.</div>
+		<div class="no4">연습1. U.S.A{&nbsp&nbsp&nbsp}</div>
+		<div class="no5">연습2. W.H.O{&nbsp&nbsp&nbsp}</div>
+		<div class="no6">연습3. H.O.T{&nbsp&nbsp&nbsp}</div>
+		<div class="circle1 absolute drag" style="top: 50px; left: 980px;"></div>
+		<div class="circle2 absolute drag" style="top: 110px; left: 1420px;"></div>
+		<div class="circle3 absolute drag" style="top: 160px; left: 1370px;"></div>
+		<div class="circle4 absolute drag" style="top: 220px; left: 1100px;"></div>
+		<div class="circle5 absolute drag" style="top: 300px; left: 1230px;"></div>
+		<div class="circle6 absolute drag" style="top: 390px; left: 900px;"></div>
+		<div class="circle7 absolute drag" style="top: 450px; left: 1360px;"></div>
+		<div class="circle8 absolute drag" style="top: 570px; left: 1330px;"></div>
+		<div class="circle9 absolute drag" style="top: 440px; left: 1020px;"></div>
+		<div class="circle10 absolute drag" style="top: 590px; left: 1110px;"></div>
+		<div class="pointer"></div>
+		<script>
+        const pointer = document.querySelector(".pointer");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            pointer.style.left = mouseX + 'px';
+            pointer.style.top = mouseY + 'px';
+        });
+        document.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+});
+</script>
+
+<script type="text/javascript">
+        (function(){
+		var d = false;
+		var target,cx,cy,lx,ly;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; target = e.target;
+				cx = e.clientX; cy = e.clientY;
+				lx=parseInt(e.target.style.left);
+				ly=parseInt(e.target.style.top);console.log(lx,ly);}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (lx + e.clientX - cx) + "px"; target.style.top = (ly + e.clientY - cy) + "px";}
+			}
+		}
+	})();
+    </script>
+	</section>
+</body>
+</html>
