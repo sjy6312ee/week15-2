@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{어떤}점</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="{어떤}점을 알고 계신가요? {어떤}점에 관한 아카이빙 페이지에서 확인해 보세요.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name="theme-color" content=black>
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://sjy6312ee.github.io/week15-2/">
+	<meta property="og:image" content="thumbnail.jfjf">
+	<meta property="og:title" content="{어떤}점">
+	<meta property="og:description" content="{어떤}점을 알고 계신가요? 우리는 일상 속에서 무수히 많은 점들과 마주칩니다. 그런 점들에 대해 얼마나 알고 계신가요? {어떤}점에 관한 아카이빙 페이지에서 확인해 보세요.">
+</head>
+<body>
+	<section>
+		<div>
+			<div id="mytext" ></div>
+		</div>
+		<a href="../01/index.html">
+			<img src="card1.png" class="absolute card1 drag" style="top:220px; left: 200px;">
+		</a>
+
+		<a href="../02/index.html">
+			<img src="card2.png" class="absolute card2 drag" style="top:280px; left: 470px;">
+		</a>
+
+		<a href="../03/index.html">
+			<img src="card3.png" class="absolute card3 drag" style="top:180px; left: 650px;">
+		</a>
+
+		<a href="../04/index.html">
+			<img src="card4.png" class="absolute card4 drag" style="top:270px; left: 850px;">
+		</a>
+
+		<a href="../05/index.html">
+			<img src="card5.png" class="absolute card5 drag" style="top:210px; left: 1080px;">
+		</a>
+
+		<img src="tarot.png" class="absolute tarot drag" style="top:240px; left: 360px;">
+		<img src="paper1.png" class="absolute paper1 drag" style="top:470px; left: 80px;">
+		<img src="paper2.png" class="absolute paper2 drag" style="top:560px; left: 770px;">
+		<img src="paper3.png" class="absolute paper3 drag" style="top:500px; left: 1080px;">
+		<div class="circle1 absolute drag" style="top: 330px; left: 120px;"></div>
+		<div class="circle2 absolute drag" style="top: 630px; left: 1310px;"></div>
+		<div class="circle3 absolute drag" style="top: 220px; left: 1000px;"></div>
+		<div class="circle4 absolute drag" style="top: 630px; left: 730px;"></div>
+		<div class="circle5 absolute drag" style="top: 340px; left: 1370px;"></div>
+		<div class="circle6 absolute drag" style="top: 280px; left: 420px;"></div>
+		<div class="circle7 absolute drag" style="top: 720px; left: 230px;"></div>
+		<div class="circle8 absolute drag" style="top: 703px; left: 260px;"></div>
+		<div class="circle9 absolute drag" style="top: 670px; left: 790px;"></div>
+		<div class="circle10 absolute drag" style="top: 480px; left: 1320px;"></div>
+		<div class="circle11 absolute drag" style="top: 200px; left: 540px;"></div>
+		<div class="circle12 absolute drag" style="top: 210px; left: 960px;"></div>
+		<div class="pointer"></div>
+		</section>
+		<footer>
+		<div class="footer1">
+			{어떤}점을 알고 계셨나요?
+		</div>
+		<div class="footer2">
+			©2021. KYEONGSEO MOON. all rights reserved.
+			<br>Contact : sjy6312ee@gmail.com
+		</div>
+	</footer>
+		<script>
+        const pointer = document.querySelector(".pointer");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            pointer.style.left = mouseX + 'px';
+            pointer.style.top = mouseY + 'px';
+        });
+        document.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+});
+</script>
+
+<script type="text/javascript">
+        (function(){
+		var d = false;
+		var target,cx,cy,lx,ly;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; target = e.target;
+				cx = e.clientX; cy = e.clientY;
+				lx=parseInt(e.target.style.left);
+				ly=parseInt(e.target.style.top);console.log(lx,ly);}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (lx + e.clientX - cx) + "px"; target.style.top = (ly + e.clientY - cy) + "px";}
+			}
+		}
+	})();
+	var text = ['{어떤}점','{◇◇}점', '{타로}점', '{♤♤}점','{북극}점','{☆☆}점','{어떤}점','{■■}점','{결승}점','{◎◎}점','{끓는}점','{△△}점','{꼭짓}점','{●●}점','{소실}점','{＃＃}점'];
+  function callMe(){
+    var myText = document.getElementById('mytext');
+    var curIdx = text.indexOf(myText.innerHTML);
+    myText.innerHTML = text[(curIdx+1)%text.length];
+  }
+  setInterval(callMe,1000);
+    </script>
+	</section>
+</body>
+</html>
