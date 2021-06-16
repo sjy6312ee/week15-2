@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>03 - {북극}점</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="topic1iconn.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="grid">
+		<div class="a">
+			<div class="ccc cccard">
+				<div class="span">03 - SCIENCE - {The North Pole/Arctic}Point ; Geographic North Pole or Terrestrial North Pole&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">03 - SCIENCE - {The North Pole/Arctic}Point ; Geographic North Pole or Terrestrial North Pole&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">03 - SCIENCE - {The North Pole/Arctic}Point ; Geographic North Pole or Terrestrial North Pole&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</div>
+		</div>
+		<nav>
+		<div class="grid">
+			<a href="../main/index.html"></a>
+		</div>
+	</nav>
+		<div class="topic">{북극}점</div>
+		<img src="topic1circle.png" class="topic1circle small1"></div>
+		<div class="def"><font class="frontdef">지구의 가장 북쪽 지점</font><br>
+				북극해의 가운데에 있으며 {북극}점 지점의 깊이는 4087m이다. {북극}점은 지구 최북단 지점으로서, 남극점과 직경으로 정반대 지점에 위치해 있다. 측지학상으로는 북위 90도의 기준이 되며 진북의 방향을 삼는 데도 기준이 된다. {북극}점을 기준으로 하면 어느 방향이든 남쪽을 향해 가리키게 되며, 모든 경선이 만나는 지점이기에 어느 경도이든 {북극}점이 한 축의 기점이 된다. {북극}점 주변의 위선을 따라 반시계 방향으로 돌면 동쪽을 향하고, 시계 방향으로 돌면 서쪽을 향하게 된다. 그밖에 {북극}점은 북반구의 중앙 지점이기도 하다.</div>
+		<div class="b"></div>
+		<img src="topic1hott.png" class="topic1hott small3"></div>
+		<div class="no1">1. 지난 30년 동안 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}의 여름철 해빙이 75% 사라졌다.</div>
+		<div class="no2">2. 2035년 여름엔 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}의 얼음을 볼 수 없다.</div>
+		<div class="no3">3. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}의 동토층이 녹으면 땅 속에 묻혀있던 바이러스로 신종 코로나19를 능가하는 팬데믹이 발생할 수 있다.</div>
+		<div class="no4">4. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}에서 일어나는 일은 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}에만 머물지 않는다.</div>
+		<div class="no5">5. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}의 빙하가 소멸되면 부산과 제주도의 겨울이 사라진다.</div>
+		<div class="no6">6. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}의 빙하가 녹아 해수면이 1cm 상승할 때마다 600만 명이 홍수와 해안 침식의 위험에 노출된다.</div>
+		<div class="no7">7. 2020년 7월 20일, {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}이<br>38℃를 기록했다.</div>
+		<div class="circle1 absolute drag" style="top: 40px; left: 1300px;"></div>
+		<div class="circle2 absolute drag" style="top: 110px; left: 1000px;"></div>
+		<div class="circle3 absolute drag" style="top: 145px; left: 1400px;"></div>
+		<div class="circle4 absolute drag" style="top: 200px; left: 1100px;"></div>
+		<div class="circle5 absolute drag" style="top: 380px; left: 1150px;"></div>
+		<div class="circle6 absolute drag" style="top: 420px; left: 870px;"></div>
+		<div class="circle7 absolute drag" style="top: 440px; left: 1380px;"></div>
+		<div class="circle8 absolute drag" style="top: 520px; left: 1240px;"></div>
+		<div class="circle9 absolute drag" style="top: 600px; left: 940px;"></div>
+		<div class="circle10 absolute drag" style="top: 620px; left: 1100px;"></div>
+		<div class="pointer"></div>
+		<script>
+        const pointer = document.querySelector(".pointer");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            pointer.style.left = mouseX + 'px';
+            pointer.style.top = mouseY + 'px';
+        });
+        document.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+});
+</script>
+
+<script type="text/javascript">
+        (function(){
+		var d = false;
+		var target,cx,cy,lx,ly;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; target = e.target;
+				cx = e.clientX; cy = e.clientY;
+				lx=parseInt(e.target.style.left);
+				ly=parseInt(e.target.style.top);console.log(lx,ly);}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (lx + e.clientX - cx) + "px"; target.style.top = (ly + e.clientY - cy) + "px";}
+			}
+		}
+	})();
+    </script>
+	</section>
+</body>
+</html>
