@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>05 - {결승}점</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="grid">
+		<div class="a">
+			<div class="ccc cccard">
+				<div class="span">05 - ATHLETICS - {Finish Line/Winning Run/Goal}Point ; A Line Marking The End of A Race&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">05 - ATHLETICS - {Finish Line/Winning Run/Goal}Point ; A Line Marking The End of A Race&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">05 - ATHLETICS - {Finish Line/Winning Run/Goal}Point ; A Line Marking The End of A Race&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</div>
+		</div>
+		<nav>
+		<div class="grid">
+			<a href="../main/index.html"></a>
+		</div>
+	</nav>
+		<div class="topic">{결승}점</div>
+		<img src="topic1circle.png" class="topic1circle small1"></div>
+		<div class="def"><font class="frontdef">육상·수영 등에서 승부가 결정되는 지점<br>승부를 결정짓는 점수</font><br>
+				승부를 판정하기 위한 기준점을 가리킨다. 육상 경기에서 {결승}점은 트랙 안쪽에서부터 직각으로 그어진 폭 5㎝의 흰 선으로 경기자의 순위 판정을 위한 것이다. 스타트 라인에 가까운 쪽이 기준이 되므로 선의 폭은 정해진 거리의 바깥쪽이 되어야 한다. 경주자의 순위는 이 선을 포함한 연직 평면에 동체가 먼저 도달한 순위에 따라 정해진다.<br>{결승}점은 야구 경기에서 똑같이 무득점이거나 혹은 동점이었다가 올린, 경기를 승리로 이끄는 득점을 뜻한다.</div>
+		<div class="b"></div>
+		<img src="topic3hott.png" class="topic1hott small3"></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<div class="no1">1. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점 위에 설치하는 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}테이프는 보조적 장치일 뿐 도착 순서를 결정하는 역할은 아니다.</div>
+		<div class="no2">2. 올림픽 중 코로나19에 확진되어 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} 경기를 못 뛰게 되면 은메달을 받는다.</div>
+		<div class="no3">3. 쇼트트랙 경기에서 발을 들이미는 이유는 스케이트 날 앞부분이 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점을 통과하는 순간 골인 기록으로 인정되기 때문이다.</div>
+		<div class="no4">4. 단거리 달리기를 할 땐 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점에 육박하면 상체를 앞으로 기울이며 달리던 속도 그대로 골인하는 것이 좋다.</div>
+		<div class="no5">5. 2002년 한국과 독일의 월드컵 준{&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}전 당시 거리 응원을 하러 700만명이 모였다.</div>
+		
+		<div class="circle1 absolute drag" style="top: 20px; left: 1270px;"></div>
+		<div class="circle2 absolute drag" style="top: 140px; left: 900px;"></div>
+		<div class="circle3 absolute drag" style="top: 150px; left: 1300px;"></div>
+		<div class="circle4 absolute drag" style="top: 195px; left: 1140px;"></div>
+		<div class="circle5 absolute drag" style="top: 420px; left: 1000px;"></div>
+		<div class="circle6 absolute drag" style="top: 330px; left: 900px;"></div>
+		<div class="circle7 absolute drag" style="top: 400px; left: 1260px;"></div>
+		<div class="circle8 absolute drag" style="top: 370px; left: 1400px;"></div>
+		<div class="circle9 absolute drag" style="top: 630px; left: 1180px;"></div>
+		<div class="circle10 absolute drag" style="top: 610px; left: 1070px;"></div>
+		<div class="pointer"></div>
+		<script>
+        const pointer = document.querySelector(".pointer");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            pointer.style.left = mouseX + 'px';
+            pointer.style.top = mouseY + 'px';
+        });
+        document.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+});
+</script>
+
+<script type="text/javascript">
+        (function(){
+		var d = false;
+		var target,cx,cy,lx,ly;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; target = e.target;
+				cx = e.clientX; cy = e.clientY;
+				lx=parseInt(e.target.style.left);
+				ly=parseInt(e.target.style.top);console.log(lx,ly);}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (lx + e.clientX - cx) + "px"; target.style.top = (ly + e.clientY - cy) + "px";}
+			}
+		}
+	})();
+    </script>
+	</section>
+</body>
+</html>
