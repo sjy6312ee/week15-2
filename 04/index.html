@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>04 - {태양 흑}점</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="grid">
+		<div class="a">
+			<div class="ccc cccard">
+				<div class="span">04 - ASTRONOMY - {Sunspot}Point ; Temporary Phenomena on The Sun's Photosphere&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">04 - ASTRONOMY - {Sunspot}Point ; Temporary Phenomena on The Sun's Photosphere&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+				<div class="span">04 - ASTRONOMY - {Sunspot}Point ; Temporary Phenomena on The Sun's Photosphere&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				</div>
+			</div>
+		</div>
+		<nav>
+		<div class="grid">
+			<a href="../main/index.html"></a>
+		</div>
+	</nav>
+		<div class="topic">{태양 흑}점</div>
+		<img src="topic1circle.png" class="topic1circle small1"></div>
+		<div class="def"><font class="frontdef">태양의 광구에 존재하는 점</font><br>{태양}에서 주변보다 낮은 온도를 지니면서 강한 자기 활동을 보이는 영역이다. 대류가 이루어지지 않기 때문에 상대적으로 낮은 표면 온도를 지니고 어둡게 보이게 된다. 즉, {태양 흑}점은 스스로도 약 4000~5000K 라는 고온에서 매우 밝은 빛을 발하지만, 주변의 6000K 정도의 온도에 비해서는 낮기 때문에 상대적으로 어두운 점으로 관측된다. {태양 흑}점의 수는 약 11년 주기로 불규칙한 주기로 오르락내리락한다.</div>
+		<div class="b"></div>
+		<img src="topic1hott.png" class="topic1hott small3"></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<div class="no1">1. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점은 다른 부분에 비해 상대적으로 어둡다. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점은 보름달 밝기의 10배 정도 된다.</div>
+		<div class="no2">2. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점이 많아지면 대재해가 일어난다는 미신이 있다.</div>
+		<div class="no3">3. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점이 많을 땐, {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}풍이 강해져 인공위성이 오작동하기도 한다.</div>
+		<div class="no4">4. 지금도 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점이 늘어나고 있다.</div>
+		<div class="no5">5. 2025년 7월에 극대기를 맞이하여 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점이 200개 정도 생길 것이라 예상하고 있다.</div>
+		<div class="no6">6. {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}점이 늘어나면 우주비행이 위험해진다. 우주비행사가 위험에 빠지지 않도록 면밀한 {&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} 활동 관측이 필요하다.</div>
+		
+		<div class="circle1 absolute drag" style="top: 50px; left: 1280px;"></div>
+		<div class="circle2 absolute drag" style="top: 210px; left: 840px;"></div>
+		<div class="circle3 absolute drag" style="top: 250px; left: 1360px;"></div>
+		<div class="circle4 absolute drag" style="top: 125px; left: 1180px;"></div>
+		<div class="circle5 absolute drag" style="top: 410px; left: 960px;"></div>
+		<div class="circle6 absolute drag" style="top: 290px; left: 1000px;"></div>
+		<div class="circle7 absolute drag" style="top: 640px; left: 1390px;"></div>
+		<div class="circle8 absolute drag" style="top: 450px; left: 1210px;"></div>
+		<div class="circle9 absolute drag" style="top: 600px; left: 950px;"></div>
+		<div class="circle10 absolute drag" style="top: 480px; left: 1320px;"></div>
+		<div class="pointer"></div>
+		<script>
+        const pointer = document.querySelector(".pointer");
+
+        document.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            pointer.style.left = mouseX + 'px';
+            pointer.style.top = mouseY + 'px';
+        });
+        document.addEventListener("mousemove", (e) => {
+    console.log(e.clientX);
+    console.log(e.clientY);
+});
+</script>
+
+<script type="text/javascript">
+        (function(){
+		var d = false;
+		var target,cx,cy,lx,ly;
+		var t = document.getElementsByClassName("drag");
+		for(var i=0; i<t.length; i++){
+			t[i].style.display = "block";
+			t[i].style.position = "absolute";
+			t[i].style.cursor = "pointer";
+			t[i].ondragstart = function(e){e.preventDefault();};
+			t[i].onmousedown = function(e){ d = true; target = e.target;
+				cx = e.clientX; cy = e.clientY;
+				lx=parseInt(e.target.style.left);
+				ly=parseInt(e.target.style.top);console.log(lx,ly);}
+			t[i].onmouseup = function(){ d = false;}
+			window.onmousemove = function(e){ 
+				if(d){ target.style.left = (lx + e.clientX - cx) + "px"; target.style.top = (ly + e.clientY - cy) + "px";}
+			}
+		}
+	})();
+    </script>
+	</section>
+</body>
+</html>
